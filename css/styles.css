@@ -1,0 +1,498 @@
+/* Змінні початок */
+:root{
+    --primery-font-fameli: "Roboto", sans-serif;
+    --secondary-font-fameli: "Raleway", sans-serif;
+    --primery-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+    --primery-bg-color:#FFFFFF;
+    --secondary-bg-color: #F5F4FA;
+}
+/* Змінні кінець*/
+
+/* Скидання від браузера автоматичних налаштувань початок*/
+
+/* Html */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+/* Html */
+
+/* Прибирає врхні маржини в заголовків, абзаців, списків п. */
+h1, h2, h3,h4, h5, h6, p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+ul,ol{
+    margin-top:0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+/* Прибирає врхні маржини в заголовків, абзаців, списків к. */
+
+/* скидання на  зображенях */
+img{
+display: block;
+}
+/* скидання на  зображенях */
+
+/* прибирає підкреслення посилань */
+a{
+    text-decoration: none;
+}
+/* прибирає підкреслення посилань */
+
+/* прибирає маркера */
+ul{ 
+    list-style: none;
+}
+/* прибирає маркера */
+
+/* Скидання шрифта на адресі */
+address{
+    font-style: normal;
+}
+/* Скидання шрифта на адресі */
+
+/* Скидання від браузера автоматичних налаштувань кінець*/
+
+/* Обраний  шрифт, колір сторінки початок*/
+body{
+    margin: 0;
+    font-family: var(--primery-font-fameli), sans-serif;
+    background: var(--primery-bg-color);
+    color: var(--primery-text-color);
+}
+/* Обраний  шрифт, колір сторінки кінець*/
+
+/* контейнер */
+.container{
+    /* outline: 2px solid tomato; */
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* контейнер */
+
+/*Головна сторінка початок*/
+
+/* Шапка початок*/
+.page-header{
+    border-bottom: 1px solid #ECECEC;
+}
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+/* Логотип верхій початок*/
+.logo-top{
+    margin-right: 93px;
+
+    font-family: var(--secondary-font-fameli);
+    font-weight: 700;
+        font-size: 26px;
+        line-height: 1.19;
+        letter-spacing: 0.03em;
+        color:#000000;
+    }
+.logo-accent{
+    color:var(--accent-color);
+}
+/* Логотип верхній кінець*/
+
+/* Навигація по сторінкам* початок*/
+.navigation{
+    display: flex;
+    align-items: center;
+}
+.site-nav{
+    display: flex;
+    align-items: center;
+}
+.site-nav-item:not(:last-child){
+    margin-right: 50px;
+}
+.site-nav .link{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+        font-family: var(--primery-font-fameli);
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 1.14;
+            letter-spacing: 0.02em;
+            color: var(--title-text-color);
+}
+.site-nav .link:hover, 
+.site-nav .link:focus{
+    color: var(--accent-color);
+}
+/* Навигація по сторінкам кінець*/
+
+/* активна сторінка п.*/
+.site-nav .link.current{
+    color: var(--accent-color);
+}
+/* активна сторінка к.*/
+
+/* Посилання на контакти п.*/
+.contact-list{
+    display: flex;
+    align-items: center; 
+}
+.contact-list-item:not(:last-child){
+    margin-right: 40px;
+}
+.contact-list .link{ 
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+font-family: var( --primery-font-fameli);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--primery-text-color);
+}
+.contact-list .link:hover,
+.contact-list .link:focus{
+    color: var(--accent-color);
+}
+/* Посилання на контакти к.*/
+/* Шапка *
+
+/* Герой початок*/
+.hero-title{
+   width: 696px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+   
+
+        font-style: normal;
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--primery-bg-color);
+}
+.hero {
+   
+    text-align: center;
+    background-color: #2F303A;
+}
+.order-button{
+    display: inline-block;
+    padding: 10px 24px;
+    border-radius: 4px;
+
+    font-family: var(--primery-font-fameli);
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.9;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+        cursor: pointer;
+        color: var(--primery-bg-color);
+        background-color: var(--accent-color);
+}
+.order-button:hover,
+.order-button:focus{
+    color: var(--primery-bg-color);
+    background-color: #188CE8;
+}
+/* Герой кінець*/
+
+/* Секции початок*/
+.section{
+    /* outline: 2px solid tomato; */
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.section-hero{
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-color: #2F303A;
+}
+.section-company-description{
+    padding-top: 94px;
+}
+.section-title-primery{
+    margin-bottom: 50px;
+
+font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+}
+.section-title-seсondary{
+    margin-bottom: 10px;
+
+    font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--title-text-color);
+}
+.section-team-members{
+    background: var(--secondary-bg-color);
+}
+/* Опис компанії п.*/
+.list-company-description{
+    display: flex;
+}
+.list-item-company-discription{
+    width: 270px;
+}
+.list-item-company-discription:not(:last-child){
+    margin-right: 30px;
+}
+.list-item-company:not(:last-child){
+    margin-right: 30px;
+}
+.company-description{
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: var(--primery-text-color);
+}
+/* Опис компанії к.*/
+
+/* Опис компанії зображення п.*/
+.list-images-works{
+    display: flex;
+}
+
+/* Опис компанії зображення к.*/
+
+/* Посади працівників компанії зображення п.*/
+.list-positions{
+    display: flex;
+}
+.positions-inner{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.positions{
+    font-size: 16px;
+        line-height: 1.19;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: var(--primery-text-color);
+}
+.list-names{
+    margin-bottom: 10px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+}
+/* Посади працівників компанії зображення к.*/
+
+/* Секции кінець*/
+
+/* Футер початок*/
+.footer{
+    outline: 2px solid tomato;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background-color: #2F303A;}
+
+/* Логотип нижній початок*/
+.logo-bottom {
+    display: block;
+    margin-bottom: 28px;
+
+    font-family: var(--secondary-font-fameli);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+.logo-accent {
+    color: #2196F3;
+}
+/* Логотип нижній кінець*/
+
+/* Адреса початок*/
+.address-list{
+display: block;
+}
+
+.address{
+    margin-bottom: 12px;
+
+    font-family: var(--primery-font-fameli);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+
+.link-email-address:hover,
+.link-email-address:focus{
+    color: var(--accent-color);
+}
+.link-email-address{
+    display: block;
+    margin-bottom: 12px;
+
+    font-family: var(--primery-font-fameli);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+}
+.link-number:hover,
+.link-number:focus{
+    color: var(--accent-color);
+}
+.link-number{
+  
+    font-family: var(--primery-font-fameli);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+}
+/* Адреса кінець*/
+
+/* Футер нижній кінець*/
+
+/*Головна сторінка кінець*/
+
+
+
+
+/* Портфоліо початок*/
+
+/* Герой початок*/
+
+/* Список кнопок з фільтром початок */
+.list-button{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.list-button-item:not(:last-child){
+    margin-right: 8px;
+}
+.button-filter{
+    border-radius: 4px;
+    padding: 6px 22px;
+
+font-family: var(--primery-font-fameli);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--title-text-color);
+    background: var(--secondary-bg-color);
+}
+
+.button-filter:hover,
+.button-filter:focus{
+    color: var(--primery-bg-color);
+    background-color: var(--accent-color);
+}
+/* Список кнопок з фільтром кінець */
+
+/* Список карточек початок */
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex-element{
+width:calc((100% - 60px) / 3);
+margin-right: 30px;
+margin-bottom: 30px;
+
+
+}
+.flex-element:nth-child(3n){
+    margin-right: 0;
+}
+.flex-element:nth-last-child(-n + 3){
+    margin-bottom: 0;
+}
+.element-discription{
+    padding: 20px 24px;
+    border: 1px solid #EEEEEE;
+    border-top: none;
+
+
+}
+
+/* Альтернатива
+.flex-element:not(:nth-child(3n)){
+    margin-right: 30px;*/
+/* .flex-element:not(:nth-last-child(-n + 3)){
+    margin-bottom: 30px;
+} */
+/* Альтернатива */
+
+.card-title{
+    margin-bottom: 4px;
+
+font-family: var(--primery-font-fameli);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2.00;
+    letter-spacing: 0.06em;
+
+    color: var(--title-text-color);
+}
+.button-icon{
+font-family: var(--primery-font-fameli);
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+
+    color: var(--primery-text-color);
+}
+/* Список карточек кінець */
+
+/* Герой кінець*/
+
+/* Портфоліо кінець*/
