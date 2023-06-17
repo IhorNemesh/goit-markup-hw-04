@@ -82,6 +82,28 @@ body{
 }
 /* контейнер */
 
+/* Visually-hidden  скритие надписи на елементе в CSS початок*/
+
+/* html  */
+/* <span class "visually-hidden"> например: "Редактировать" </span>*/
+/* html  */
+
+/* CSS */
+/* 
+.visually-hidden{
+position: absolute;
+width: 1px;
+height: 1px;
+margin: -1px;
+border: 0;
+padding: 0;
+clip: rect(0 0 0 0);
+overflow: hidden;
+ */
+/* CSS */
+
+/* Visually-hidden  скритие надписи на елементе в CSS кінець*/
+
 /*Головна сторінка початок*/
 
 /* Шапка початок*/
@@ -233,7 +255,7 @@ font-family: var( --primery-font-fameli);
     padding-top: 200px;
     padding-bottom: 200px;
 
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../Images/Img.jpg-Heroy.jpg);
     background-size:cover;
     background-color: #C4C4C4;
@@ -279,22 +301,32 @@ font-style: normal;
 .list-item-company-discription:not(:last-child){
     margin-right: 30px;
 }
-.list-item-company:not(:last-child){
-    margin-right: 30px;
-}
 .company-description{
         font-size: 14px;
         line-height: 1.71;
         letter-spacing: 0.03em;
         color: var(--primery-text-color);
 }
+.inner-icon-company-discription{
+    display: flex;
+    width: 270px;
+    height: 120px;
+    padding: 25px 100px;
+   
+    background: var(--secondary-bg-color);
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+.icon-company-discription{}
 /* Опис компанії к.*/
 
 /* Опис компанії зображення п.*/
 .list-images-works{
     display: flex;
 }
-
+.list-item-company:not(:last-child) {
+    margin-right: 30px;
+}
 /* Опис компанії зображення к.*/
 
 /* Посади працівників компанії зображення п.*/
@@ -306,6 +338,8 @@ font-style: normal;
     padding-bottom: 30px;
 }
 .positions{
+    margin-bottom: 16px;
+
     font-size: 16px;
         line-height: 1.19;
         text-align: center;
@@ -322,13 +356,51 @@ font-style: normal;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
 }
+.social-list{
+    display: flex;
+    justify-content: center;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+.social-list-item:not(:last-child){
+margin-right: 10px;
+}
+.social-list-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+.social-list-link:hover,
+.social-list-link:focus{
+  background-color: var(--accent-color);
+}
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon{
+    fill: var(--primery-bg-color);
+}
+.social-list-icon{
+    fill: #AFB1B8;
+}
+.list-item-company {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
 /* Посади працівників компанії зображення к.*/
 
+/* Постійні кліеєнти */
+.list-item-brands{
+    width: 170px;
+    height: 92px;
+}
+/* Постійні кліеєнти */
 /* Секции кінець*/
 
 /* Футер початок*/
 .footer{
-    outline: 2px solid tomato;
+    /* outline: 2px solid tomato; */
     padding-top: 60px;
     padding-bottom: 60px;
 
