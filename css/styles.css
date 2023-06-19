@@ -73,7 +73,6 @@ body{
 
 /* контейнер */
 .container{
-    /* outline: 2px solid tomato; */
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
@@ -173,6 +172,10 @@ overflow: hidden;
     display: flex;
     align-items: center; 
 }
+.contact-list-item{
+    display: flex;
+    align-items: center;
+}
 .contact-list-item:not(:last-child){
     margin-right: 40px;
 }
@@ -188,11 +191,21 @@ font-family: var( --primery-font-fameli);
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--primery-text-color);
-}
+} 
 .contact-list .link:hover,
 .contact-list .link:focus{
     color: var(--accent-color);
+    
 }
+.email-icon{
+    margin-right: 10px;
+    fill: var(--primery-text-color);
+}
+.email-icon:hover,
+.email-icon:focus{
+    fill: var(--accent-color);
+}
+
 /* Посилання на контакти к.*/
 /* Шапка *
 
@@ -233,6 +246,7 @@ font-family: var( --primery-font-fameli);
         cursor: pointer;
         color: var(--primery-bg-color);
         background-color: var(--accent-color);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .order-button:hover,
 .order-button:focus{
@@ -317,7 +331,6 @@ font-style: normal;
     border-radius: 4px;
     margin-bottom: 30px;
 }
-.icon-company-discription{}
 /* Опис компанії к.*/
 
 /* Опис компанії зображення п.*/
@@ -394,13 +407,26 @@ margin-right: 10px;
 .list-item-brands{
     width: 170px;
     height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    padding: 16px 32px;
+} 
+.list-item-brands:not(:last-child){
+margin-right: 30px;
+}
+.icon-brands{
+    fill: #AFB1B8;
+}
+.icon-brands:hover,
+.icon-brands:focus{
+    fill: var(--accent-color);
 }
 /* Постійні кліеєнти */
 /* Секции кінець*/
 
 /* Футер початок*/
 .footer{
-    /* outline: 2px solid tomato; */
+    display:flex;
     padding-top: 60px;
     padding-bottom: 60px;
 
@@ -472,6 +498,38 @@ display: block;
 
     color: rgba(255, 255, 255, 0.6);
 }
+.footer-inner{
+    display: flex;
+   
+}
+.footer-address-inner{
+    display: block;
+    margin-right: 70px;
+}
+.footer-social-inner{
+    display: block;
+   padding-top: 12px;
+}
+.social-list-footer{
+    display: flex;
+}
+.social-title{
+    margin-bottom: 20px;
+
+    font-family: var(--primery-font-fameli);
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    
+        color: #FFFFFF;
+}
+.bg-social-foter{
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+}
 /* Адреса кінець*/
 
 /* Футер нижній кінець*/
@@ -526,8 +584,10 @@ font-family: var(--primery-font-fameli);
 width:calc((100% - 60px) / 3);
 margin-right: 30px;
 margin-bottom: 30px;
-
-
+}
+.flex-element-inner{
+        border: 1px solid #EEEEEE;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .flex-element:nth-child(3n){
     margin-right: 0;
