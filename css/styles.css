@@ -200,7 +200,7 @@ font-family: var( --primery-font-fameli);
 }
 .email-icon{
     margin-right: 10px;
-    fill: var(--primery-text-color);
+    fill: currentColor
 }
 .email-icon:hover,
 .email-icon:focus{
@@ -326,8 +326,9 @@ font-style: normal;
     display: flex;
     width: 270px;
     height: 120px;
-    padding: 25px 100px;
-   
+   justify-content: center;
+    align-items: center;
+
     background: var(--secondary-bg-color);
     border-radius: 4px;
     margin-bottom: 30px;
@@ -348,8 +349,7 @@ font-style: normal;
     display: flex;
 }
 .positions-inner{
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 30px 32px;
 }
 .positions{
     margin-bottom: 16px;
@@ -373,8 +373,6 @@ font-style: normal;
 .social-list{
     display: flex;
     justify-content: center;
-    padding-left: 32px;
-    padding-right: 32px;
 }
 .social-list-item:not(:last-child){
 margin-right: 10px;
@@ -406,21 +404,31 @@ margin-right: 10px;
 
 /* Постійні кліеєнти */
 .list-item-brands{
+    display: flex;
     width: 170px;
     height: 92px;
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;
-    padding: 16px 32px;
+    
 } 
 .list-item-brands:not(:last-child){
 margin-right: 30px;
 }
+.link-icon-brands{
+    display: inline-flex;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    padding: 16px 32px;
+    color: #AFB1B8;
+}    
+.link-icon-brands:hover,
+.link-icon-brands:focus{
+    border-color: var(--accent-color);
+}
 .icon-brands{
-    fill: #AFB1B8;
+   fill: #AFB1B8
 }
 .icon-brands:hover,
 .icon-brands:focus{
-    fill: var(--accent-color);
+    fill: var(--accent-color)
 }
 /* Постійні кліеєнти */
 /* Секции кінець*/
@@ -501,6 +509,7 @@ display: block;
 }
 .footer-inner{
     display: flex;
+    align-items: baseline;
    
 }
 .footer-address-inner{
@@ -509,7 +518,6 @@ display: block;
 }
 .footer-social-inner{
     display: block;
-   padding-top: 12px;
 }
 .social-list-footer{
     display: flex;
@@ -573,6 +581,9 @@ font-family: var(--primery-font-fameli);
 .button-filter:focus{
     color: var(--primery-bg-color);
     background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 /* Список кнопок з фільтром кінець */
 
@@ -587,8 +598,14 @@ margin-right: 30px;
 margin-bottom: 30px;
 }
 .flex-element-inner{
-        border: 1px solid #EEEEEE;
-        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    display: inline-block;
+    border: 1px solid #EEEEEE;
+       
+}
+.flex-element-inner:hover,
+.flex-element-inner:focus{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+
 }
 .flex-element:nth-child(3n){
     margin-right: 0;
