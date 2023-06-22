@@ -347,6 +347,8 @@ font-style: normal;
 /* Посади працівників компанії зображення п.*/
 .list-positions{
     display: flex;
+
+    background-color: var(--primery-bg-color);
 }
 .positions-inner{
     padding: 30px 32px;
@@ -414,21 +416,26 @@ margin-right: 30px;
 }
 .link-icon-brands{
     display: inline-flex;
-    border: 1px solid #AFB1B8;
+    width: 170px;
+    height: 92px;
+    justify-content: center;
+    align-items: center;
     border-radius: 4px;
-    padding: 16px 32px;
-    color: #AFB1B8;
+
+    border: 1px solid #AFB1B8;
+    border-color:  #AFB1B8;
 }    
-.link-icon-brands:hover,
+.link-icon-brands:hover ,
 .link-icon-brands:focus{
+  
     border-color: var(--accent-color);
 }
 .icon-brands{
    fill: #AFB1B8
 }
-.icon-brands:hover,
-.icon-brands:focus{
-    fill: var(--accent-color)
+.link-icon-brands:hover .icon-brands,
+.link-icon-brands:hover.icon-brands{
+   fill: var(--accent-color);
 }
 /* Постійні кліеєнти */
 /* Секции кінець*/
@@ -535,9 +542,24 @@ display: block;
     
         color: #FFFFFF;
 }
-.bg-social-foter{
+.bg-social-footer{
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.1);
+}
+.social-list-link-footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+}
+.social-list-link-footer:hover,
+.social-list-link-footer:focus{
+    background-color: var(--accent-color);
+}
+.social-list-icon-footer{
+    fill: var(--primery-bg-color);
 }
 /* Адреса кінець*/
 
