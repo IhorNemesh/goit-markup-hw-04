@@ -347,8 +347,6 @@ font-style: normal;
 /* Посади працівників компанії зображення п.*/
 .list-positions{
     display: flex;
-
-    background-color: var(--primery-bg-color);
 }
 .positions-inner{
     padding: 30px 32px;
@@ -401,6 +399,8 @@ margin-right: 10px;
 .list-item-company {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+
+    background-color: var(--primery-bg-color);
 }
 /* Посади працівників компанії зображення к.*/
 
@@ -434,7 +434,7 @@ margin-right: 30px;
    fill: #AFB1B8
 }
 .link-icon-brands:hover .icon-brands,
-.link-icon-brands:hover.icon-brands{
+.link-icon-brands:focus .icon-brands{
    fill: var(--accent-color);
 }
 /* Постійні кліеєнти */
